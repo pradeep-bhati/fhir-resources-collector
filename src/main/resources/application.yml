@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: fhir-resources-collector
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: testinput7
+        output:
+          destination: testoutput7
+server:
+  port: 8080
+logging:
+  level:
+    org.springframework: info
